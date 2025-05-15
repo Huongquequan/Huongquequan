@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hương Quê Quán</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fffce8;
+            color: #3e4e1c;
+        }
+        .navbar {
+            background-color: #a2c523;
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+            font-weight: bold;
+        }
+        .hero {
+            background-image: url('https://i.imgur.com/C8ZofSn.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .menu-section {
+            padding: 50px 20px;
+            background-color: #fffbe0;
+        }
+        .menu-item img {
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+        }
+        .reviews {
+            background-color: #fdf5c9;
+            padding: 50px 20px;
+        }
+        .review {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #a2c523;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        .contact-buttons a {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Hương Quê Quán</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#menu">Thực đơn</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Liên hệ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#book">Đặt bàn</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reviews">Đánh giá</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Hương Quê Quán</h1>
+        <p>Đậm đà hương vị miền Tây sông nước</p>
+    </div>
+
+    <div class="container menu-section" id="menu">
+        <h2 class="text-center mb-5">Thực đơn tiêu biểu</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="menu-item">
+                    <img src="https://i.imgur.com/2XxtYed.jpg" alt="Cá lóc nướng trui">
+                    <h5 class="mt-2 text-center">Cá lóc nướng trui</h5>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="menu-item">
+                    <img src="https://i.imgur.com/rUZFEuO.jpg" alt="Lẩu mắm miền Tây">
+                    <h5 class="mt-2 text-center">Lẩu mắm miền Tây</h5>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="menu-item">
+                    <img src="https://i.imgur.com/3Gn3RAC.jpg" alt="Chuột đồng nướng muối ớt">
+                    <h5 class="mt-2 text-center">Chuột đồng nướng muối ớt</h5>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="menu-item">
+                    <img src="https://i.imgur.com/xv0A8EA.jpg" alt="Canh chua cá linh">
+                    <h5 class="mt-2 text-center">Canh chua cá linh bông điên điển</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center py-5" id="contact">
+        <h3>Liên hệ đặt bàn</h3>
+        <div class="contact-buttons">
+            <a href="tel:0866666810" class="btn btn-warning">Gọi đặt bàn</a>
+            <a href="https://zalo.me/0866666810" target="_blank" class="btn btn-success">Zalo</a>
+            <a href="https://facebook.com" target="_blank" class="btn btn-primary">Facebook</a>
+        </div>
+    </div>
+
+    <div class="container py-5" id="book">
+        <h3 class="text-center mb-4">Đặt bàn online</h3>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Họ và tên</label>
+                <input type="text" class="form-control" id="name" placeholder="Nhập tên bạn...">
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Số điện thoại</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Nhập số điện thoại...">
+            </div>
+            <div class="mb-3">
+                <label for="guests" class="form-label">Số lượng khách</label>
+                <input type="number" class="form-control" id="guests" placeholder="Ví dụ: 4">
+            </div>
+            <div class="mb-3">
+                <label for="date" class="form-label">Ngày đặt</label>
+                <input type="date" class="form-control" id="date">
+            </div>
+            <button type="submit" class="btn btn-success">Gửi yêu cầu</button>
+        </form>
+    </div>
+
+    <div class="reviews" id="reviews">
+        <div class="container">
+            <h3 class="text-center mb-4">Đánh giá của khách hàng</h3>
+            <div class="review">"Món ăn rất ngon, đúng vị miền Tây!" – Anh Minh, Long Xuyên</div>
+            <div class="review">"Không gian thoáng mát, phục vụ nhiệt tình!" – Chị Lan, Chợ Mới</div>
+            <div class="review">"Rất thích lẩu mắm và cá nướng ở đây!" – Bạn Tùng, Cao Lãnh</div>
+        </div>
+    </div>
+
+    <div class="container py-5" id="map">
+        <h3 class="text-center mb-4">Bản đồ quán</h3>
+        <div class="ratio ratio-16x9">
+            <iframe src="https://www.google.com/maps?q=999+Mỹ+An+Chợ+Mới&output=embed" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <footer>
+        Địa chỉ: 999, Mỹ An Chợ Mới | SĐT: 0866666810
+    </footer>
+
+</body>
+</html>
